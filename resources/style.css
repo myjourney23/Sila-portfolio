@@ -81,10 +81,6 @@ h1 {
     font-size: 2rem;
 }
 
-#greeting {
-    /* margin-top: 6rem; */
-}
-
 #greeting-job-title {
     color: rgb(175, 171, 171);
     font-size: 1rem;
@@ -164,9 +160,17 @@ h1 {
     border: .5px solid #333;
     padding: 1.5rem;
     color: #333;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
     text-align: center;
+}
+
+.language-description {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
 }
 
 .language {
@@ -516,6 +520,7 @@ h1 {
     background-color: #f6f7f9;
     border: .5px solid #333;
     color: #333;
+    cursor: pointer;
 }
 
 #contact-details {
@@ -536,7 +541,7 @@ h1 {
 }
 
 #contact-details a{
-    display: inline-block;
+    display: block;
     margin: 0 auto;
 }
 
@@ -547,7 +552,7 @@ h1 {
     width: 75px;
     height: 75px;
     border-radius: 7px;
-    margin-top: 1rem;
+    margin: 1rem auto;
 
 }
 
@@ -556,7 +561,367 @@ h1 {
         display: block;
     }
 
+    nav ul {
+        height: 3.5rem;
+    }
+
     nav a {
         font-size: 1.2rem;
     }
+
+    #home-blank,
+    #experience-blank,
+    #projects-blank,
+    #contact-blank,
+    #skills-blank {
+    height: 3.5rem;
+    }
+
+    #portrait {
+        width:  400px;
+        height: 400px;
+        margin-top: 3rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #greeting {
+        margin-top: 5rem;
+    }
+
+    #greeting-job-title {
+        font-size: 2rem;
+    }
+
+    #greeting p {
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+
+    .language-description-box {
+        width: 23%;
+        margin-right: 0;
+    }
+
+    #languages-list {
+        justify-content: space-between;
+    }
+
+    #project-image,
+    #project-image-2,
+    #skills-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .project-list p {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .orange-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    #projects-description {
+        width: 550px;
+        height: 450px;
+    }
+
+    #projects-images {
+        width: 550px;
+        height: 500px;
+    }
+
+    #proofreading-description {
+        width: 550px;
+        height: 475px;
+    }
+
+    #proofreading-images {
+        width: 550px;
+        height: 550px;
+    }
+
+    #guides-description {
+        width: 550px;
+        height: 350px;
+    }
+
+    #guides-images {
+        width: 550px;
+        height: 550px;
+    }
+
+    #publishing-description {
+        width: 550px;
+        height: 475px;
+    }
+
+    #publishing-images {
+        width: 550px;
+        height: 550px;
+    }
+
+    .skills-chart li {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .skill-line {
+        display: inline-block;
+        width: 300px;
+    }
+
+    .line-dot {
+        position: relative;
+        bottom: 0rem;
+        top: .2rem;
+        margin-bottom: 0rem;
+        display: inline-block;
+    }
+    
+    #dot-1 {
+        left: -75px;
+    }
+    
+    #dot-2 {
+        left: -38px;
+    }
+    
+    #dot-3 {
+        left: -165px;
+    }
+    
+    #dot-4 {
+        left: -150px;
+    }
+    
+    #dot-5 {
+        left: -45px;
+    }
+    
+    #dot-6 {
+       left: -90px;
+    }
+    
+    #dot-7 {
+        left: -9px;
+    }
+    
+    #dot-1b {
+        left: -9px;
+    }
+    
+    #dot-2b {
+        left: -9px;
+    }
+    
+    #dot-3b {
+        left: -9px;
+    }
+    
+    #dot-4b {
+        left: -9px;
+    }
+    
+    #dot-5b {
+        left: -9px;
+    }
+    
+    #dot-6b {
+       left: -45px;
+    }
+    
+    #dot-7b {
+        left: -9px;
+    }
+    
+    #dot-1c {
+        left: -9px;
+    }
+    
+    #dot-2c {
+        left: -45px;
+    }
+    
+    #dot-3c {
+        left: -9px;
+    }
+    
+    #dot-4c {
+        left: -9px;
+    }
+    
+    #dot-5c {
+        left: -45px;
+    }
+    
+    #dot-6c {
+       left: -45px;
+    }
+
+    .skill-gap {
+        height: 1.5rem;
+    }
+
+    #contact-button {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        display: inline-block;
+    }
+
+    #contact-details {
+        padding-bottom: 1rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #contact-details a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #home-banner .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #portrait {
+        width: 0px;
+        min-width: 350px;
+        height: 350px;
+        margin-left: 0px;
+        margin-right: 7rem;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    #greeting {
+        margin-top: 0px;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #greeting-job-title {
+        font-size: 1.75rem;
+    }
+
+    #greeting p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        width: 500px;
+    }
+
+    .description-box li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .language-description {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    #projects-description {
+        display: inline-block;
+        width: 550px;
+        height: 450px;
+        margin-right: 10%;
+    }
+
+    #projects-images {
+        display: inline-block;
+        width: 450px;
+        height: 475px;
+        position: relative;
+        top: 1rem;
+    }
+
+    #guides-description {
+        display: inline-block;
+        width: 600px;
+        height: 400px;
+        margin-right: 10%;
+    }
+
+    #guides-images {
+        display: inline-block;
+        width: 475px;
+        height: 475px;
+        position: relative;
+        top: 1rem;
+    }
+
+    #proofreading-description {
+        display: inline-block;
+        width: 525px;
+        height: 450px;
+        margin-right: 10%;
+    }
+
+    #proofreading-images {
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top: 1rem;
+    }
+
+    #publishing-description {
+        display: inline-block;
+        width: 525px;
+        height: 450px;
+        margin-right: 10%;
+    }
+
+    #publishing-images {
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top: 1rem;
+    }
+
+    .skills-chart {
+        width: max-content;
+        display: inline-block;
+        margin-right: .5rem;
+    }
+
+    .skills-chart li {
+        width: 185px;
+    }
+
+    #contact-button {
+        display: block;
+        margin: 1rem auto 4rem auto;
+        width: 50%;
+    }
+
+    #contact-details {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+
+    /* #contact-details a {
+        left: 5rem;
+    } */
 }
